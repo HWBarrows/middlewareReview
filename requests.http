@@ -1,0 +1,30 @@
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/sanitizeUser/
+Content-Type: application/json
+
+{
+    "firstName" : "Furaha",
+    "lastName" : "Mustermann",
+    "age": "129",
+    "fbw": "E07",
+    "profession" : "Musician",
+    "favoriteBands" : ["Radiohead", "Motorhead", "Machinehead", "The talking heads" ],
+    "email" : "furaha@example.org"
+  }
+
+###
+POST http://localhost:3000/validateUser/
+Content-Type: application/json
+
+{
+    "firstName" : "Furaha",
+    "lastName" : "Mustermann",
+    "age": "129",
+    "fbw": "E07",
+    "profession" : "Musician",
+    "favoriteBands" : ["Radiohead", "Motorhead", "Machinehead", "The talking heads" ],
+    "email" : "furaha@example.org"
+  }
